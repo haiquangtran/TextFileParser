@@ -1,0 +1,43 @@
+
+loop {
+  if ( gt(oppLR, 0) ) {
+     move;
+     turnL;
+turnAround;
+  }
+  if ( lt(oppFB, 0) ) {
+     move;
+     turnL;
+  }
+  if ( eq(oppLR, 0) ) {
+     move;
+     turnL;
+  }
+  if ( gt(oppFB, 0) ) {
+     move;
+     turnL;
+  }
+  if ( gt(fuelLeft, 0) ) {
+     move;
+     turnL;
+  }
+  if ( gt(barrelLR, 0) ) {
+     move;
+     turnL;
+  }
+ if ( gt(barrelFB, 0) ) {
+     move;
+     turnL;
+  }
+}
+loop {
+  if ( gt(wallDist, 9) ) {
+     move;
+     turnL;
+  }
+}
+move;
+move;
+shieldOff;
+shieldOn;
+turnAround;

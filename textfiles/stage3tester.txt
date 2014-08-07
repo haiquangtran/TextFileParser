@@ -1,0 +1,57 @@
+
+$wer;
+wait($wer);
+$wer = 5;
+move($wer);
+
+$wer = 1;
+move($wer);
+
+$wer;
+wait($wer);
+
+if(eq(barrelLR(5),barrelLR(5))){
+shieldOn;
+}
+
+if(eq(barrelLR(5),barrelLR)){
+shieldOn;
+}
+
+if(gt(barrelFB(5),barrelFB)){
+shieldOff;
+}
+ 
+
+if (lt(oppLR,0)){
+shieldOff;
+}
+elif (eq(0,0)){
+shieldOn;
+}
+elif (eq(0,0)){
+shieldOn;
+}
+else {
+shieldOff;
+}
+
+if (eq(0,1)){ shieldOff;
+}
+else {
+move;
+}
+
+if (eq(1,0)){
+shieldOff;
+}
+elif (eq(1,0)){
+shieldOff;
+} 
+elif (eq(1,0)){
+shieldOff;
+} 
+else {
+turnL;
+} 
+

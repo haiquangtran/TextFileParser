@@ -1,0 +1,30 @@
+move;
+wait;
+move(2);
+wait(2);
+if (lt(oppFB,0)) { turnAround; } 
+else { move; }
+
+if (not(lt(oppFB,0))){
+move;
+}
+
+if (and(lt(oppFB,0),lt(oppFB,0))){
+move;
+}
+
+if (or(lt(oppFB,0),gt(oppFB,0))){
+turnL;
+} else { 
+turnR; 
+}
+
+if (eq(add(5,5),10)){
+shieldOn;
+} if (eq(sub(5,5),0)){
+shieldOn;
+} if (eq(mul(5,5),25)){
+shieldOn;
+}if (eq(div(25,5),5)){
+shieldOn;
+}

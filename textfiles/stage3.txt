@@ -1,0 +1,52 @@
+while(gt(fuelLeft, 0)){     
+
+    if(eq(numBarrels, 0)){   
+
+        wait;
+
+    } elif ( lt(add(oppFB,oppLR), 3) ) { 
+
+        move(oppFB);                      
+
+    } else{           
+
+        $lr = barrelLR;      
+
+        $fb = barrelFB;      
+
+        if(and(eq($lr, 0), eq($fb, 0))){   
+
+            takeFuel;                   
+
+        } else{
+
+            if(eq($fb, 0)){        
+
+                if(lt($lr, 0)){    
+
+                    turnL;
+
+                } else{
+
+                    turnR;
+
+                }
+
+            } else{
+
+                if(gt($fb, 0)){
+
+                    move;
+
+                } else{
+                    turnAround;
+
+              }
+
+            }
+
+        }
+
+    }
+
+}
